@@ -25,5 +25,5 @@ $('form').conditional(options);
 ## Options available
 
 ```javascript
-    methods: []
+methods: []
 ```
