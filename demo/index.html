@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8' />
+	<title>Modal</title>
+
+	<link rel='stylesheet' type='text/css' media='all' href='demo.css' />
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+	<script type='text/javascript' src='../jquery.conditional.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('form').conditional();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="inside">
+
+		<div id="fragment">
+			<form>
+				<select name="test">
+					<option value="">Hide</option>
+					<option value="1">Show</option>
+				</select>
+
+				<div data-conditional-field="test" data-conditional-field-values="1">
+					Test
+				</div>
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>
