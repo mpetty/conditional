@@ -1,4 +1,4 @@
-# Conditional v0.1
+# Conditional v1.0.0
 
 Library for conditionally displaying html based on field values.
 
