@@ -2,7 +2,7 @@
 /*!
  *	Name:		Conditional
  *	Author: 	Mitchell Petty <https://github.com/mpetty/conditional>
- * 	Version: 	0.1
+ * 	Version: 	1.0.0
  *	Notes: 		Requires jquery 1.7+
  */
  (function(factory) {

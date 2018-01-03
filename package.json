@@ -1,6 +1,6 @@
 {
   "name": "conditional",
-  "version": "0.1",
+  "version": "1.0.0",
   "main": "src/jquery.conditional.js",
   "repository": {
     "type": "git",

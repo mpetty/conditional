@@ -1,7 +1,7 @@
 {
-	"name": "modal",
+	"name": "conditional",
 
-	"version": "1.16.0",
+	"version": "1.0.0",
 
 	"license": "MIT",
 
@@ -19,8 +19,7 @@
 	],
 
   	"main": [
-  		"jquery.modal.min.js",
-  		"modal.min.css"
+  		"jquery.conditional.min.js"
   	],
 
 	"dependencies": {
