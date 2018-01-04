@@ -11,7 +11,7 @@ Add to your project's `bower.json` or `package.json` file, like:
 ```json
 {
   "dependencies": {
-    "modal": "git@github.com:mpetty/conditional"
+    "conditional": "git@github.com:mpetty/conditional"
   }
 }
 ```
