@@ -87,7 +87,6 @@
 
 					data.el.off('force-change.'+method.selector+' change.'+method.selector).on('force-change.'+method.selector+' change.'+method.selector, $.proxy(this.trigger, this));
 					data.el.trigger('force-change.'+method.selector);
-
 				}
 			}
 		},
@@ -98,7 +97,6 @@
 				value = this.getVal($this).join(','),
 				$fields = $('['+method.selector+'="'+$this.attr('name')+'"]', this.$selector),
 				$field = $();
-
 
 			$fields.each(function() {
 				var data = $(this).attr('data-conditional-field-values');
@@ -112,6 +110,7 @@
 				}
 			});
 
+			$('input,select,textarea', $field).trigger('refresh');
 			method.start.call(this, $field, $fields);
 		},
 
