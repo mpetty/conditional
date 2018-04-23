@@ -47,7 +47,10 @@
 
                 $('input, select, textarea', notSelected).attr('disabled', 'disabled');
 
-                $('input, select, textarea', field).filter(':visible, [type="hidden"]').removeAttr('disabled');
+				$('input, select, textarea', field)
+					.filter(':visible, [type="hidden"]')
+					.removeAttr('disabled')
+					.trigger('updated');
 
                 $('input[type="hidden"]', field).removeAttr('disabled');
 
@@ -110,7 +113,6 @@
 				}
 			});
 
-			$('input,select,textarea', $field).trigger('refresh');
 			method.start.call(this, $field, $fields);
 		},
 
