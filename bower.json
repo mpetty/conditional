@@ -1,0 +1,28 @@
+{
+	"name": "conditional",
+
+	"version": "1.0.1",
+
+	"license": "MIT",
+
+	"private": true,
+
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"demo",
+		"src",
+		"*.json",
+		"Gruntfile.js",
+		"readme.md"
+	],
+
+  	"main": [
+  		"jquery.conditional.min.js"
+  	],
+
+	"dependencies": {
+		"jquery": ">=1.7.0"
+	}
+}

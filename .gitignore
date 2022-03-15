@@ -1,0 +1,22 @@
+# Global #
+######################
+.sass-cache
+node_modules
+bower_components
+npm-debug.log
+*.log
+*.css.map
+*.js.map
+.env.local.php
+.env.php
+
+# OS files #
+######################
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*Thumbs.db
+._*

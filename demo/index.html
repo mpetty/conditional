@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8' />
+	<title>Modal</title>
+
+	<link rel='stylesheet' type='text/css' media='all' href='demo.css' />
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+	<script type='text/javascript' src='../jquery.conditional.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('form').conditional();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="inside">
+
+			<form method="POST" action="#" class="form-horizontal"><div class="container-row"><div class="form-group"><strong><label for="form-source">Filter properties</label></strong> <div class="form-inline"><span>Exclude</span> <select id="form-source" required="required" name="source" class="form-control"><option value="ip_address">traffic from the IP Addresses</option> <option value="domain">traffic from the domain</option> <option value="domain_query">traffic from the domain and matching query</option> <option value="organization">traffic from the organization</option></select> <span data-conditional-field="source" data-conditional-field-values="ip_address" class="conditional-field highlight-field"><select id="form-expression" required="required" name="expression" class="form-control"><option value="Range">that are in the range</option> <option value="IsEqualTo">that are equal to</option> <option value="BeginsWith">that begin with</option> <option value="EndsWith">that end with</option> <option value="Contains">that contain</option> <option value="Custom">that match the regular expression</option></select></span></div></div> <div data-conditional-field="source" data-conditional-field-values="organization" class="hide" style="display: none;"><div class="form-group"><label for="form-target-org">Organization Name</label> <div class="form-inline"><input placeholder="Palo Alto Networks" id="form-target-org" data-validate="email" required="required" name="target" type="text" disabled="disabled" class="form-control"></div></div></div> <div data-conditional-field="source" data-conditional-field-values="domain" class="hide" style="display: none;"><div class="form-group"><label for="form-target-domain">Domain Name</label> <div class="form-inline"><input placeholder="google.com" id="form-target-domain" data-validate="email" required="required" name="target" type="text" disabled="disabled" class="form-control"></div></div></div> <div data-conditional-field="source" data-conditional-field-values="domain_query" class="hide" style="display: none;"><div class="row"><div class="col-xs-4"><div class="form-group"><label for="form-target-domain_query">URL</label> <input placeholder="google.com" id="form-target-domain_query" data-validate="email" required="required" name="target" type="text" disabled="disabled" class="form-control"></div></div> <div class="col-xs-4"><div class="form-group"><label for="form-target-range-domain_query">Query</label> <input placeholder="test=1" id="form-target-range-domain_query" required="required" name="target_range" type="text" disabled="disabled" class="form-control"></div></div></div></div> <div data-conditional-field="source" data-conditional-field-values="ip_address" class="conditional-field highlight-field"><div data-conditional-field="expression" data-conditional-field-values="Range" class="conditional-field highlight-field"><div class="form-group"><strong><label for="form-target2">IP Address Range</label></strong> <div class="form-inline"><span>between</span> <input id="form-target2" required="required" name="target" type="text" class="form-control medium"> <span>and</span> <input required="required" name="target_range" type="text" class="form-control medium"></div></div></div> <div data-conditional-field="expression" data-conditional-field-values="IsEqualTo,BeginsWith,EndsWith,Contains,Custom" class="hide" style="display: none;"><div class="form-group"><label for="form-target">IP Address</label> <div class="form-inline"><input id="form-target" data-validate="email" required="required" name="target" type="text" disabled="disabled" class="form-control"></div></div></div></div></div> <div class="form-footer"><div class="align-right"><button type="submit" class="btn btn-primary">Save Changes</button> <a data-confirm="" type="button" href="" class="btn btn-inverse">Cancel</a></div></div></form>
+
+	</div>
+</body>
+</html>
