@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git@github.com:mpetty/conditional.git"
   },
+  "scripts": {
+    "build": "grunt",
+    "watch": "grunt watch"
+  },
   "devDependencies": {
     "grunt": ">=0.4.1",
     "grunt-contrib-concat": ">=0.3.0",
